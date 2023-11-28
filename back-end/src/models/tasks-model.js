@@ -14,7 +14,7 @@ const createTask = async (task) => {
 
   const [createdTask] = await connection.execute(query, [
     title,
-    "false",
+    "pendente",
     dateUTC,
   ]);
 
